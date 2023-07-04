@@ -8,6 +8,8 @@ public class Flipkart {
     private static Flipkart instance = null;
     private List<OnOrderPlacedSubscriber> onOrderPlacedSubscribers = new ArrayList<>();
 
+    private Flipkart(){}
+
     public static Flipkart getInstance() {
         if (instance == null) {
              instance = new Flipkart();
