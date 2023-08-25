@@ -8,7 +8,7 @@ public class DatabaseConnection1 {
 
     }
 
-    public static DatabaseConnection1 getInstance() {
+    public static synchronized DatabaseConnection1 getInstance() {
         return instance;
     }
 }
